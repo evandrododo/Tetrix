@@ -142,7 +142,7 @@ void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination 
 bool init()
 {
   if( SDL_Init( SDL_INIT_EVERYTHING ) == -1 ) { return false; } //starta SDL
-  screen = SDL_SetVideoMode( 7, 500, 32, SDL_SWSURFACE ); 	//abre janela
+  screen = SDL_SetVideoMode( 700, 500, 32, SDL_SWSURFACE ); 	//abre janela
   if( screen == NULL ) { return false; } 			//testa janela
   if( TTF_Init() == -1 ) { return false; } 			//starta fonte
   font = TTF_OpenFont( "verdana.ttf", 14 ); 			//seta fonte
